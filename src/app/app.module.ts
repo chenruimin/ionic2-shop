@@ -16,6 +16,9 @@ import { Fetch } from "emiya-angular2-fetch";
 import {DataPool,DataPoolHandle} from 'emiya-angular2-datapool';
 import {PlusReduce} from '../directives/plus-reduce/plus-reduce';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import {GoodsOrderPage} from '../pages/goods-order/goods-order';
+import {Header} from '../directives/header/header';
+import {GoodsPage} from '../pages/goods/goods';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     GoodsInfoPage,
     GoodsListPage,
     ShopCartPage,
-    PlusReduce
+    PlusReduce,
+    GoodsOrderPage,
+    Header,
+    GoodsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {tabsPlacement: 'bottom'}, {
@@ -54,7 +60,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     GoodsInfoPage,
     GoodsListPage,
     ShopCartPage,
-    PlusReduce
+    PlusReduce,
+    GoodsOrderPage,
+    Header,
+    GoodsPage
   ],
   providers: [Router,Fetch,DataPool]
 })

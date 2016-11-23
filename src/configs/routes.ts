@@ -5,6 +5,8 @@
 import {TabsPage} from '../pages/tabs/tabs';
 import {GoodsInfoPage} from '../pages/goods-info/goods-info';
 import {GoodsListPage} from '../pages/goods-list/goods-list';
+import {GoodsOrderPage} from '../pages/goods-order/goods-order';
+import {AboutPage} from '../pages/about/about';
 
 
 export const Routes = {
@@ -27,5 +29,15 @@ export const Routes = {
     page: GoodsListPage,
     url: '/goodsList',
     title: '商品列表页'
+  },
+  'goodsOrder': {
+    page: GoodsOrderPage,
+    url: '/goodsOrder',
+    title: '结算'
+  },
+  'goods': {
+    page: AboutPage,
+    url: '/goods',
+    title: '商品'
   }
 }
