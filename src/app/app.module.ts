@@ -15,6 +15,7 @@ import {ShopCartPage} from '../directives/shopcart/shopcart-footer';
 import { Fetch } from "emiya-angular2-fetch";
 import {DataPool,DataPoolHandle} from 'emiya-angular2-datapool';
 import {PlusReduce} from '../directives/plus-reduce/plus-reduce';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {PlusReduce} from '../directives/plus-reduce/plus-reduce';
         {component: LoginPage, name: 'Login', segment: 'login'},
         {component: LogoutPage, name: 'Logout', segment: 'logout'},
       ]
-    })
+    }),
+    ChartsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
